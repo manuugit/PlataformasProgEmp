@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">Home</a>
+        <a href="../about/about.html">Acerca de </a>
+        <a href="../galeria/galeria.html">Galería</a>
+    </header>
+    <h1>Login</h1>
+    <section>
+        <form id="formulario"novalidate method="POST" onsubmit="return false">
+            <label> Usuario </label>
+            <input type="text" id="usuario" name="usuario" required> <br>
+            <label> Contraseña </label>
+            <input type="text" id="password" name="password" required> <br>
+            <button type="sumbit" onclick="ingresar()">Ingresar</button>
+        </form>
+    </section>
+    <script src= "../js/login.js"> </script>
+</body>
+</html>
