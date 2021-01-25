@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas de programación empresarial S1</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="about/about.html">Acerca de </a>
+        <a href="galeria/galeria.html">Galeria</a>
+    </header>
+    <h1>Home</h1>
+    <P>
+        Bienvenido al sitio web. Regístrate y podrás ver una colección de fotos
+        que sobrepasa los límites de la ternura. No te arrepentirás
+    </P>
+    <section>
+        <h2>Registro</h2>
+        <form id="formulario"novalidate method="POST" onsubmit="return false">
+            <label> Nombre </label>
+            <input type="text" id="nombre" name="nombre" required> <br>
+            <label> Usuario </label>
+            <input type="text" id="usuario" name="usuario" required> <br>
+            <label> Contraseña </label>
+            <input type="text" id="password" name="password" required> <br>
+            <button type="sumbit" onclick="validacion()">Registrarse</button>
+        </form>
+        <label for=""> ¿Ya te encuentras registrado? </label>
+        <a href="login/login.html" id="linkIngreso">Ingresa aquí</a>
+    </section>
+
+    <script src="js/registro.js"></script>
+</body>
+</html>
