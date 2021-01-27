@@ -23,6 +23,6 @@ var recordarPsw =() =>{
         alert("Su contraseña:"+datosUsuario.password);
     }
     else {
-        alert('No se encontró el nombre de usuario');
+        alert('No se encontró el nombre de usuario. Por favor revisa');
     }
 }
