@@ -7,7 +7,7 @@ var ingresar = () =>{
 
  if(usuario == datosUsuario.usuario && password == datosUsuario.password){
      alert('Ingreso exitoso');
-     linkGaleria.click(); //redirecciona a galeria
+    window.location.href="../secciones/galeria.html"; //redirecciona a galeria
  }
  else {
      alert('Los datos ingresados son incorrectos');

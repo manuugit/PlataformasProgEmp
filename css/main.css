@@ -1,9 +1,23 @@
-/*.zoom{
+.zoom{
     transition: width 2s,height 2s, transform 2s;
 }
 .zoom:hover{
     transform:scale(1.2);
-}*/
+}
+
+.zoom:hover .text{
+  position: absolute;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  left: 0px;
+  bottom: 0px;
+  margin: 0px auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Quicksand;
+  color: #fff;
+  width: 100%;
+}
 
 body {
   /*background: linear-gradient(90deg, #52c4df,  #A909F9 );*/
@@ -16,7 +30,7 @@ h1{
 header{
   color:purple;
 }
-.img-hover-zoom {
+/*.img-hover-zoom {
     height: auto;
     overflow: hidden;
     position: relative;
@@ -27,8 +41,8 @@ header{
     transition: width 2s,height 2s, transform 2s;
     /*transition: transform .5s ease;
     display: block;*/
-  }
-  
+  /*}
+  /*
   .img-hover-zoom:hover img {
     transform: scale(1.2);
   }
