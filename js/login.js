@@ -18,11 +18,18 @@ var recordarPsw =() =>{
     var usuario = document.getElementById("usuario").value; //obtengo el nombre de usuario
     var datosUsuario = JSON.parse(localStorage.getItem(usuario));
     //verificar que el usuario está en localStorage
-    if(usuario == datosUsuario.usuario){
-        console.log(datosUsuario.password);
-        alert("Su contraseña:"+datosUsuario.password);
+    if (usuario != ""){
+        if(usuario == datosUsuario.usuario){
+            console.log(datosUsuario.password);
+            alert(datosUsuario.usuario+", su contraseña: "+datosUsuario.password);
+        }
+        else {
+            alert('No se encontró el nombre de usuario. Por favor revisa');
+        }
     }
-    else {
-        alert('No se encontró el nombre de usuario. Por favor revisa');
+    else
+    {
+        alert("Campo de usuario está vacío");
     }
+   
 }

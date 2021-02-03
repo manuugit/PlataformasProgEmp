@@ -16,9 +16,10 @@ var validacion = () => {
 
     if(valido == true){
         registro();
-    } else {
+    } else{
         alert('Por favor completa todos los campos');
     }
+        
 
 }
 
@@ -41,6 +42,6 @@ var registro = () =>{
     localStorage.setItem(datosUsuario.usuario, JSON.stringify(datosUsuario));
     console.log(datosUsuario)
     formulario.reset(); //blanquea los campos del form
-    alert('Registro exitoso');
+    alert('Registro exitoso. Bienvenido '+datosUsuario.usuario);
     linkIngreso.click(); //redirecciona a login
 }
