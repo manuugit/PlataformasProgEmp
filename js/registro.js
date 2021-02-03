@@ -36,8 +36,9 @@ var registro = () =>{
         password: password
     };
 
+
     //agrego los datos del usuario al localStorage
-    localStorage.setItem('usuario', JSON.stringify(datosUsuario));
+    localStorage.setItem(datosUsuario.usuario, JSON.stringify(datosUsuario));
     console.log(datosUsuario)
     formulario.reset(); //blanquea los campos del form
     alert('Registro exitoso');
