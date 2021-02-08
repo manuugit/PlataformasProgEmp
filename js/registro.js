@@ -1,3 +1,5 @@
+window.onload = validacion
+window.onload = registro
 
 //funcion para validar que los campos esten completos
 var validacion = () => {

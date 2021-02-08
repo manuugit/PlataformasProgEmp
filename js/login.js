@@ -1,4 +1,7 @@
  
+ window.onload = ingresar
+ window.onload = recordarPsw
+ 
  var ingresar = () =>{
  var usuario = document.getElementById("usuario").value;
  var password = document.getElementById("password").value;
